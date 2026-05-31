@@ -69,6 +69,13 @@ export async function signUp({ email, password, name, role }) {
       role, // 'surfista' | 'fotografo'
     });
     if (pErr) throw pErr;
+    // Atualiza o estado já com o perfil criado (evita corrida com o
+    // evento de login, que poderia carregar o perfil antes de existir).
+    if (data.session) {
+      _user = data.user;
+      await loadProfile();
+      emit();
+    }
   }
   return data;
 }
