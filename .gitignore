@@ -1,0 +1,16 @@
+# Ferramentas locais do Claude Code
+.claude/
+
+# Sistema operacional
+Thumbs.db
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# NÃO ignoramos js/config.js: a anon key do Supabase é pública por design.
+# Só não coloque NUNCA a service_role key aqui.
