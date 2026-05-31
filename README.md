@@ -1,5 +1,7 @@
 # 🌊 Marolas — Previsão de Ondas + Rede Social do Surf
 
+**🔗 No ar:** https://slimeasa.github.io/marolas/ — hospedado de graça no GitHub Pages. A cada `git push` na branch `main`, o site atualiza sozinho.
+
 Rede social do surf do **Litoral Norte de São Paulo** (Maresias, Paúba e Guaecá) com:
 
 - **Previsão de ondas** direta e simples (altura, período, direção, vento, melhor janela do dia) — dados **reais** via [Open-Meteo](https://open-meteo.com), **sem chave de API**.
